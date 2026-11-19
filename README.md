@@ -4,8 +4,8 @@
 
 | 도구 | 하는 일 | 사용 |
 | --- | --- | --- |
-| **GIF-Maker** | 이미지 **여러 장** → GIF · WebP · PSD | [열기](https://riam-zen.github.io/umzzal-maker/) |
-| **GIF-FX** | 이미지 **한 장** + 연출 효과 → GIF · WebP | [열기](https://riam-zen.github.io/umzzal-maker/#fx) |
+| **GIF-Maker** | 이미지 **여러 장** → GIF · WebP · PSD | [열기](https://cofoty5.github.io/cofoty5-gif/) |
+| **GIF-FX** | 이미지 **한 장** + 연출 효과 → GIF · WebP | [열기](https://cofoty5.github.io/cofoty5-gif/#fx) |
 
 두 도구는 한 페이지의 탭이고, 서로 영향을 주지 않습니다.
 
