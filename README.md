@@ -1,13 +1,15 @@
 # Cofoty5 GIF-Maker / GIF-FX
 
+**한국어** · [English](README.en.md) · [日本語](README.ja.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
+
 브라우저에서 바로 쓰는 GIF 제작 도구입니다. 설치가 필요 없고, 이미지는 내 컴퓨터 밖으로 나가지 않습니다.
 
-### ▶ [바로 쓰기](https://cofoty5.github.io/cofoty5-gif/)  ·  ⬇ [다운로드](https://github.com/CoFoTy5/cofoty5-gif/releases/latest/download/Cofoty5-GIF.html)
+### ▶ [바로 쓰기](https://cofoty5.github.io/cofoty5-gif/?lang=ko)  ·  ⬇ [다운로드](https://github.com/CoFoTy5/cofoty5-gif/releases/latest/download/Cofoty5-GIF.html)
 
 - **GIF-Maker**: 이미지 여러 장 → GIF · WebP · PSD
 - **GIF-FX**: 이미지 한 장 + 연출 효과 → GIF · WebP
 
-한 페이지에 탭 두 개로 들어 있고, 서로 영향을 주지 않습니다. 「다운로드」로 받은 HTML 파일은 더블클릭만 하면 인터넷 없이 실행됩니다. (사이트 오른쪽 위의 「⬇ 내려받기」 버튼으로도 받을 수 있습니다.)
+한 페이지에 탭 두 개로 들어 있고, 서로 영향을 주지 않습니다. 「다운로드」로 받은 HTML 파일은 더블클릭만 하면 인터넷 없이 실행됩니다. 사이트 오른쪽 위 **☰ 메뉴**에서 언어(한국어 · English · 日本語 · 简体中文 · 繁體中文)를 바꾸고 HTML을 내려받을 수 있습니다.
 
 ---
 
@@ -55,8 +57,10 @@
 <details>
 <summary><b>📌 수정 내역 · 알아둘 점 (펼치기)</b></summary>
 
-### 최근 업데이트 (GIF-Maker v1.7.1 · GIF-FX v1.5.1 · 2026-11-19)
+### 최근 업데이트 (v2.0.0 · 2026-11-19)
 
+- 5개 언어 지원(한국어 · English · 日本語 · 简体中文 · 繁體中文). 처음에는 브라우저 언어로 자동 선택되고, ☰ 메뉴에서 바꾸면 기억됩니다.
+- 오른쪽 위 ☰ 메뉴 추가(언어 · 내려받기), 버전 표기를 하나로 통합
 - 이름을 **Cofoty5 GIF-Maker / GIF-FX**로 변경(Cofoty5 시리즈)
 - 묶음을 더블클릭해 열고, 프레임 편집·상하위 이동(끌기, ↰ ↴ 버튼) 가능. ⤢ 풀기는 확인 경고가 뜹니다.
 - GIF-Maker·GIF-FX 모두 되돌리기 / 다시 실행 추가
@@ -72,19 +76,21 @@
 - 묶음 안의 프레임에는 전환 효과가 걸리지 않고, 묶음과 묶음 사이에만 걸립니다. 묶음 안에 다른 묶음을 넣을 수는 없습니다.
 - 프레임을 편집한 묶음은 프로젝트 파일에 프레임 목록으로 저장되어 파일이 더 커집니다.
 - PSD는 8비트 RGB만 불러올 수 있습니다.
+- 번역은 화면 표시만 바꿉니다. 프로젝트 파일은 언어와 상관없이 그대로 열립니다.
+- 주소 뒤에 `?lang=en`(ko · en · ja · zh · tw)을 붙이면 그 언어로 바로 열립니다.
 - 프리셋·직접 추가한 효과는 이 브라우저에 저장됩니다. 캐시를 지우면 사라지니 「내보내기」로 백업하세요.
 - 프로젝트 확장자: GIF-Maker `.umzzal.json`(예전 파일과의 호환 유지), GIF-FX `.gifx.json`
 
 ### 올릴 파일
 
 - `index.html` — 두 도구가 들어 있는 단일 파일(이것 하나로 동작)
-- `README.md`, `gif-maker.png`, `gif-fx.png` — 저장소 루트에 둡니다.
+- `README.md`(한국어), `README.en.md`, `README.ja.md`, `README.zh-CN.md`, `README.zh-TW.md`, `gif-maker.png`, `gif-fx.png` — 저장소 루트에 둡니다.
 
 ### 릴리즈 만들기 (큰 업데이트마다)
 
 1. `index.html`을 저장소에 올린 뒤, 파일 이름을 **`Cofoty5-GIF.html`**로 바꾼 사본을 준비합니다.
 2. 저장소 오른쪽의 **Releases → Create a new release**로 들어갑니다.
-3. **Choose a tag**에 `v1.7.1`처럼 입력하고 *Create new tag*를 누릅니다. 제목과 변경 내용을 적습니다.
+3. **Choose a tag**에 `v2.0.0`처럼 입력하고 *Create new tag*를 누릅니다. 제목과 변경 내용을 적습니다.
 4. 아래 첨부 영역에 `Cofoty5-GIF.html`을 끌어다 놓습니다. 파일 이름은 항상 같게 유지합니다.
 5. **Publish release**를 누릅니다. 위쪽 「다운로드」 링크가 자동으로 이 최신 릴리즈의 파일을 가리킵니다.
 
@@ -98,4 +104,4 @@ GIF 인코딩에 [gifenc](https://github.com/mattdesl/gifenc)(MIT License, © Ma
 
 ---
 
-**[완성형5번유형](https://cft5.pages.dev/)** · GIF-Maker v1.7.1 · GIF-FX v1.5.1 · 최종 업데이트 2026-11-19
+**[완성형5번유형](https://cft5.pages.dev/)** · v2.0.0 · 최종 업데이트 2026-11-19
