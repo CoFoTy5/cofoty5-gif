@@ -2,12 +2,12 @@
 
 브라우저에서 바로 쓰는 GIF 제작 도구입니다. 설치가 필요 없고, 이미지는 내 컴퓨터 밖으로 나가지 않습니다.
 
-| 도구 | 하는 일 | 사용 |
-| --- | --- | --- |
-| **GIF-Maker** | 이미지 **여러 장** → GIF · WebP · PSD | [열기](https://cofoty5.github.io/cofoty5-gif/) |
-| **GIF-FX** | 이미지 **한 장** + 연출 효과 → GIF · WebP | [열기](https://cofoty5.github.io/cofoty5-gif/#fx) |
+### ▶ [바로 쓰기](https://cofoty5.github.io/cofoty5-gif/)  ·  ⬇ [다운로드](https://github.com/CoFoTy5/cofoty5-gif/releases/latest/download/Cofoty5-GIF.html)
 
-두 도구는 한 페이지의 탭이고, 서로 영향을 주지 않습니다.
+- **GIF-Maker**: 이미지 여러 장 → GIF · WebP · PSD
+- **GIF-FX**: 이미지 한 장 + 연출 효과 → GIF · WebP
+
+한 페이지에 탭 두 개로 들어 있고, 서로 영향을 주지 않습니다. 「다운로드」로 받은 HTML 파일은 더블클릭만 하면 인터넷 없이 실행됩니다. (사이트 오른쪽 위의 「⬇ 내려받기」 버튼으로도 받을 수 있습니다.)
 
 ---
 
@@ -79,6 +79,16 @@
 
 - `index.html` — 두 도구가 들어 있는 단일 파일(이것 하나로 동작)
 - `README.md`, `gif-maker.png`, `gif-fx.png` — 저장소 루트에 둡니다.
+
+### 릴리즈 만들기 (큰 업데이트마다)
+
+1. `index.html`을 저장소에 올린 뒤, 파일 이름을 **`Cofoty5-GIF.html`**로 바꾼 사본을 준비합니다.
+2. 저장소 오른쪽의 **Releases → Create a new release**로 들어갑니다.
+3. **Choose a tag**에 `v1.7.1`처럼 입력하고 *Create new tag*를 누릅니다. 제목과 변경 내용을 적습니다.
+4. 아래 첨부 영역에 `Cofoty5-GIF.html`을 끌어다 놓습니다. 파일 이름은 항상 같게 유지합니다.
+5. **Publish release**를 누릅니다. 위쪽 「다운로드」 링크가 자동으로 이 최신 릴리즈의 파일을 가리킵니다.
+
+릴리즈 페이지에는 첨부한 HTML과 함께 `Source code (zip)` / `(tar.gz)`가 자동으로 붙습니다. 이 둘은 저장소 전체(소스) 압축본이고, 일반 사용자는 HTML만 받으면 됩니다.
 
 ### 라이선스
 

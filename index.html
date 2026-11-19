@@ -39,10 +39,12 @@ header{height:54px;padding:0 18px;flex-wrap:nowrap}
 .tabs{display:flex;gap:4px;margin-left:10px}
 .tabs button{border:1px solid var(--line);background:var(--panel2);color:var(--muted);padding:6px 16px;border-radius:8px;cursor:pointer;font:inherit;font-weight:600}
 .tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.dl{border:1px solid var(--line);background:var(--panel2);color:var(--text2);padding:6px 12px;border-radius:8px;font-size:12.5px;font-weight:600;text-decoration:none;white-space:nowrap;margin-right:10px}
+.dl:hover{border-color:var(--accent);color:var(--text)}
 .frames{height:calc(100% - 54px);position:relative}
 .frames iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:var(--bg)}
 .frames iframe.hide{visibility:hidden;pointer-events:none}
-@media(max-width:700px){.sub,.credit{display:none}}
+@media(max-width:900px){.sub,.credit{display:none}}
 </style></head>
 <body data-theme="light">
 <header>
@@ -51,6 +53,7 @@ header{height:54px;padding:0 18px;flex-wrap:nowrap}
   <span class="sub" id="sub">이미지 여러 장 → GIF · WebP · PSD</span>
   <span class="grow"></span>
   <div class="credit"><a class="maker" href="https://cft5.pages.dev/" target="_blank" rel="noopener" title="https://cft5.pages.dev/ 로 이동">제작 <b>완성형5번유형</b> ↗</a><br>GIF-Maker v1.7.1 · GIF-FX v1.5.1 · 2026-11-19</div>
+  <a id="dl" class="dl" href="./index.html" download="Cofoty5-GIF.html" title="인터넷 없이도 쓸 수 있는 HTML 파일 한 개를 내려받습니다">⬇ 내려받기</a>
   <div class="themes" id="themes" title="화면 테마"><button data-t="light" title="밝게">☀️</button><button data-t="mid" title="중간 (포토샵 스타일)">🌓</button><button data-t="dark" title="어둡게">🌙</button></div>
 </header>
 <div class="frames"><iframe id="f-maker" title="GIF-Maker"></iframe><iframe id="f-fx" title="GIF-FX" class="hide"></iframe></div>
@@ -59,6 +62,7 @@ const SRC={maker:"PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImtvIj4KPGhlYWQ+CjxtZXRhIG
 const dec=b=>new TextDecoder().decode(Uint8Array.from(atob(b),c=>c.charCodeAt(0)));
 const SUB={maker:'이미지 여러 장 → GIF · WebP · PSD',fx:'이미지 한 장 → 연출 효과를 입힌 GIF · WebP'};
 const $=s=>document.querySelector(s);
+if(location.protocol==='file:')$('#dl').hidden=true;
 function setTheme(t){document.body.dataset.theme=t;[...$('#themes').children].forEach(b=>b.classList.toggle('on',b.dataset.t===t));
   try{localStorage.setItem('umzzal-theme',t);}catch(e){}
   for(const k of ['maker','fx']){const w=$('#f-'+k).contentWindow;if(w)w.postMessage({type:'gif-theme',t},'*');}}
